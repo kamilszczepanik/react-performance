@@ -89,7 +89,7 @@ function App() {
   const rowVirtualizer = useVirtual({
     size: items.length,
     parentRef: listRef,
-    estimateSize: React.useCallback(() => 20, []),
+    estimateSize: React.useCallback(() => 20, []), // can be dynamic
     overscan: 10,
   })
 
